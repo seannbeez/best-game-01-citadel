@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Clockwork Citadel: Aether Siege</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #14102a;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #game {
+    display: block;
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: crosshair;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+  }
+</style>
+</head>
+<body>
+<canvas id="game"></canvas>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
